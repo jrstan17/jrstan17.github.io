@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 1em;
+    font-size: 1.2em;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    background-color: #ffffff;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.radio-group input {
+    margin-right: 0.5em;
+}
+
+.radio-group label {
+    margin-right: 1.5em;
+    font-size: 1.1em;
+    color: #555;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result,
+.timestamp {
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radio-group label {
+        margin-right: 0;
+        margin-bottom: 0.75em;
+    }
+
+    .result,
+    .timestamp {
+        font-size: 1em;
+    }
+}
